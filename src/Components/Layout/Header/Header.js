@@ -1,6 +1,6 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, IconButton } from "@material-ui/core";
-import MenuIcon from "@material-ui/icons/Menu";
+// import MenuIcon from "@material-ui/icons/Menu";
 // import NavDrawer from "../Drawer/NavDrawer";
 
 function Header() {
@@ -22,7 +22,7 @@ function Header() {
           {/* <IconButton onClick={openDrawer}>
             <MenuIcon htmlColor="#ffffff" />
           </IconButton> */}
-          <Typography variant="h6">Watch!Eat</Typography>
+          <Typography variant="h6">Covid Info Kerala</Typography>
         </Toolbar>
       </AppBar>
     </>
