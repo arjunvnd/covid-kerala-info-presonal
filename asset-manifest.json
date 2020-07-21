@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/covid-kerala-info-presonal/static/css/main.d8806d18.chunk.css",
+    "main.js": "/covid-kerala-info-presonal/static/js/main.46994715.chunk.js",
+    "main.js.map": "/covid-kerala-info-presonal/static/js/main.46994715.chunk.js.map",
+    "runtime-main.js": "/covid-kerala-info-presonal/static/js/runtime-main.60822ee9.js",
+    "runtime-main.js.map": "/covid-kerala-info-presonal/static/js/runtime-main.60822ee9.js.map",
+    "static/js/2.7b3d5977.chunk.js": "/covid-kerala-info-presonal/static/js/2.7b3d5977.chunk.js",
+    "static/js/2.7b3d5977.chunk.js.map": "/covid-kerala-info-presonal/static/js/2.7b3d5977.chunk.js.map",
+    "index.html": "/covid-kerala-info-presonal/index.html",
+    "precache-manifest.add10f1c4a3b16642279214e3394d213.js": "/covid-kerala-info-presonal/precache-manifest.add10f1c4a3b16642279214e3394d213.js",
+    "service-worker.js": "/covid-kerala-info-presonal/service-worker.js",
+    "static/css/main.d8806d18.chunk.css.map": "/covid-kerala-info-presonal/static/css/main.d8806d18.chunk.css.map",
+    "static/js/2.7b3d5977.chunk.js.LICENSE.txt": "/covid-kerala-info-presonal/static/js/2.7b3d5977.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.60822ee9.js",
+    "static/js/2.7b3d5977.chunk.js",
+    "static/css/main.d8806d18.chunk.css",
+    "static/js/main.46994715.chunk.js"
+  ]
+}
