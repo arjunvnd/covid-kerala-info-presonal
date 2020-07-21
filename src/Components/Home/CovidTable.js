@@ -3,13 +3,30 @@ import { connect } from "react-redux";
 
 import PropTypes from "prop-types";
 import MaterialTable from "material-table";
+import { Typography } from "@material-ui/core";
 
 function CovidTable({ covidInfo }) {
+  const showActiveState = rowData => {
+    return (
+      <span>
+        {`${rowData.active}`}
+        <Typography
+          color="error"
+          variant="caption"
+        >{`+${rowData.newCases}`}</Typography>
+      </span>
+    );
+  };
+
   const columns = [
     { title: "District", field: "district" },
-    { title: "Active", field: "active" },
+    {
+      title: "Active",
+      field: "active",
+      render: rowData => showActiveState(rowData)
+    },
     { title: "Confirmed", field: "confirmed" },
-    { title: "Deceased", field: "deceased" },
+    { title: "Total Deaths", field: "deceased" },
     { title: "Recovered", field: "recovered" }
   ];
 
@@ -33,7 +50,7 @@ CovidTable.propTypes = {
 };
 
 const mapStateToProps = state => ({
-  covidInfo: state.covidInfo["covidInfo"]
+  covidInfo: JSON.parse(JSON.stringify(state.covidInfo["covidInfo"]))
 });
 
 export default connect(mapStateToProps)(CovidTable);

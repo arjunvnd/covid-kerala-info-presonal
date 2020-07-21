@@ -7,10 +7,15 @@ import {
 const baseUrl = "https://api.covid19india.org/state_district_wise.json";
 
 const transformResponse = data => {
-  const transformedData = Object.keys(data).map(item => ({
-    district: item,
-    ...data[item]
-  }));
+  const transformedData = Object.keys(data)
+    .map(item => ({
+      district: item,
+      ...data[item],
+      newCases: data[item].delta.confirmed,
+      newDeaths: data[item].delta.deceased,
+      newRecoveries: data[item].delta.recovered
+    }))
+    .filter(item => item.district !== "Other State");
   return transformedData;
 };
 
