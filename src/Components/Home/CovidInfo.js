@@ -4,11 +4,13 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import CovidTable from "./CovidTable";
 import WithLoading from "../../HOC/WithLoading";
+import ActivePie from "../graphs/ActivePie";
 
 function CovidInfo() {
   return (
     <>
       <CovidTable />
+      <ActivePie />
     </>
   );
 }
